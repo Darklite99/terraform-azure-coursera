@@ -1,4 +1,4 @@
-resource "azurerm_network_security_group" "myterraformnetwork" {
+resource "azurerm_virtual_network" "myterraformnetwork" {
   name                = var.vnetname
   address_space       = ["10.0.0.0/16"]
   location            = var.location
